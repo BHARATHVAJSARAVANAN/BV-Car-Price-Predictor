@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+      
+        <title>Car Price Predictor</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+      
+        <!-- Favicons -->
+        <link href="static/img/favicon.png" rel="icon">
+        <link href="static//img/apple-touch-icon.png" rel="apple-touch-icon">
+      
+        <!-- Google Fonts -->
+        <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet"> -->
+      
+        <!-- Vendor CSS Files -->
+        <link href="static/vendor/animate.css/animate.min.css" rel="stylesheet">
+        <link href="static/vendor/aos/aos.css" rel="stylesheet">
+        <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+        <link href="static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+        <link href="static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+        <link href="static/vendor/remixicon/remixicon.css" rel="stylesheet">
+        <link href="static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+      
+        <!-- Template Main CSS File -->
+        <link href="static/css/style.css" rel="stylesheet">
+      
+      </head>
+<body>
+    <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="/"><span>Car Price</span> Predictor</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto " href="/">Home</a></li>
+          <!-- <li><a class="nav-link scrollto" href="/about-us">About Us</a></li> -->
+          <!-- <li><a class="nav-link scrollto" href="/garbage">Garbages</a></li> -->
+          <li><a class="nav-link scrollto active" href="/prediction">Predictor</a></li>
+          <!-- <li><a class="nav-link scrollto" href="/contact">Contact</a></li> -->
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+        <div class="header-social-links d-flex">
+          <a href="#" class="twitter"><i class="bu bi-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bu bi-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bu bi-instagram"></i></a>
+          <a href="#" class="linkedin"><i class="bu bi-linkedin"></i></i></a>
+        </div>
+      </div>
+    </header><!-- End Header -->
+  
+
+    <div class="container">
+      <div class="row">
+        <div class="card mt-50" style="width: 100%; height: 100%">
+          <div class="card-header" style="text-align: center">
+            <h1><b>Welcome to Car Price Predictor</b></h1>
+          </div>
+          <div class="card-body">
+            <div class="col-12" style="text-align: center">
+              <h5>
+                This site predicts the price of a car you want to sell. Try
+                filling the details below:
+              </h5>
+            </div>
+            <br />
+            <form method="post" accept-charset="utf-8" name="Modelform">
+              <div class="col-md-12 form-group" style="text-align: center">
+                <label><b>Select the company:</b> </label><br />
+                <select
+                  class="selectpicker form-control"
+                  id="company"
+                  name="company"
+                  required="1"
+                  onchange="load_car_models(this.id,'car_models')"
+                >
+                  {% for company in companies %}
+                  <option value="{{ company }}">{{ company }}</option>
+                  {% endfor %}
+                </select>
+              </div><br>
+              <div class="col-md-12 form-group" style="text-align: center">
+                <label><b>Select the model:</b> </label><br />
+                <select
+                  class="selectpicker form-control"
+                  id="car_models"
+                  name="car_models"
+                  required="1"
+                ></select>
+              </div><br>
+              <div class="col-md-12 form-group" style="text-align: center">
+                <label><b>Select Year of Purchase:</b> </label><br />
+                <select
+                  class="selectpicker form-control"
+                  id="year"
+                  name="year"
+                  required="1"
+                >
+                  {% for year in years %}
+                  <option value="{{ year }}">{{ year }}</option>
+                  {% endfor %}
+                </select>
+              </div><br>
+              <div class="col-md-12 form-group" style="text-align: center">
+                <label><b>Select the Fuel Type:</b> </label><br />
+                <select
+                  class="selectpicker form-control"
+                  id="fuel_type"
+                  name="fuel_type"
+                  required="1"
+                >
+                  {% for fuel in fuel_types %}
+                  <option value="{{ fuel }}">{{ fuel }}</option>
+                  {% endfor %}
+                </select>
+              </div><br>
+              <div class="col-md-12 form-group" style="text-align: center">
+                <label
+                  ><b
+                    >Enter the Number of Kilometres that the car has
+                    travelled:</b
+                  > </label
+                ><br />
+                <input
+                  type="text"
+                  class="form-control"
+                  id="kilo_driven"
+                  name="kilo_driven"
+                  placeholder="Enter the kilometres driven "
+                />
+              </div><br/><br/>
+              <div class="col-md-12 form-group" style="text-align: center">
+                <button
+                  class="btn btn-primary form-control"
+                  onclick="send_data()"
+                >
+                  Predict Price
+                </button>
+              </div><br/>
+            </form>
+            <br />
+            <div class="row">
+              <div class="col-12" style="text-align: center">
+                <h4><span id="prediction"></span></h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+
+      function load_car_models(company_id,car_model_id)
+      {
+          var company=document.getElementById(company_id);
+          var car_model= document.getElementById(car_model_id);
+          console.log(company.value);
+          car_model.value="";
+          car_model.innerHTML="";
+          {% for company in companies %}
+              if( company.value == "{{ company }}")
+              {
+                  {% for model in car_models %}
+                      {% if company in model %}
+
+                          var newOption= document.createElement("option");
+                          newOption.value="{{ model }}";
+                          newOption.innerHTML="{{ model }}";
+                          car_model.options.add(newOption);
+                      {% endif %}
+                  {% endfor %}
+              }
+          {% endfor %}
+      }
+
+      function form_handler(event) {
+          event.preventDefault(); // Don't submit the form normally
+      }
+      function send_data()
+      {
+          document.querySelector('form').addEventListener("submit",form_handler);
+
+          var fd=new FormData(document.querySelector('form'));
+
+          var xhr= new XMLHttpRequest({mozSystem: true});
+
+          xhr.open('POST','/predict',true);
+          document.getElementById('prediction').innerHTML="Wait! Predicting Price.....";
+          xhr.onreadystatechange = function(){
+              if(xhr.readyState == XMLHttpRequest.DONE){
+                  document.getElementById('prediction').innerHTML="Prediction: ₹"+xhr.responseText;
+
+              }
+          };
+
+          xhr.onload= function(){};
+
+          xhr.send(fd);
+      }
+    </script>
+    <script>
+      const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+      navLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          navLinks.forEach((navLink) => navLink.classList.remove("active"));
+          link.classList.add("active");
+        });
+      });
+    </script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  
+
+
+      <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-info">
+              <h3>Car Price Predictor</h3>
+              <p>
+                  512 1st St, Periyar Nagar,<br>
+                  Samathuvapuram,<br>Mambakkam,<br> 
+                  Chennai - 600 127<br><br>
+                  <strong>Phone:</strong> +91 73976 39450<br>
+                  <strong>Email:</strong> carpricepredictor@gmail.com<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="/">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about-us">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Grabage Classification</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Medical Care Cost Analysis</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Production and Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Real-time Data and Analytics</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Environmental repors</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Join Our Newsletter</h4>
+            <p>Our team of automotive experts shares valuable tips on negotiating the best deal and choosing the right car for your needs.</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>2023 Car Price Predictor</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+       
+        Designed by <a href="www.linkedin.com/in/bharathvaj-saravanan-ab21001b4">Bharathvaj S</a>
+      </div>
+    </div>
+    
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="static/vendor/aos/aos.js"></script>
+  <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="static/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="static/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="static\js\main.js"></script>
+  </body>
+</html>
