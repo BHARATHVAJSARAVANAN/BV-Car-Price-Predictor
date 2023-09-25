@@ -54,10 +54,11 @@ Prerequisite: Download all files from Github Link
 
 Download PyCharm
 
-Create new environment using command --> conda create -n env_name python==3.10.2
-Activate environment using command --> conda activate env_name
-Install requirements by typing (cd ProjectFolder) --> pip install -r requirements.txt
-Now run app.py by writing command --> python app.py
+1.Create new environment using command --> conda create -n env_name python==3.10.2
+2.Activate environment using command --> conda activate env_name
+3.Install requirements by typing (cd ProjectFolder) --> pip install -r requirements.txt
+4.Now run app.py by writing command --> python app.py
+
 Website Link: https://irrigreat.herokuapp.com/
 
 PEST DATASET: https://www.kaggle.com/simranvolunesia/pest-dataset
