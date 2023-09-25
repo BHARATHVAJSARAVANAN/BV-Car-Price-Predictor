@@ -1,1 +1,1 @@
-web: gunicorn Car_Price_Predictor.wsgi
+web: gunicorn Car_Price_Predictor:app
