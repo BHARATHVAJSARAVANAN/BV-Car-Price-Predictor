@@ -9,7 +9,7 @@ Demo Video: https://youtu.be/HEaFU68WAPM
 
 # Aim
 
-This project aims to predict the Price of an used Car by taking it's Company name, it's Model name, Year of Purchase, and other parameters.
+This project aims to provide a useful tool for both buyers and sellers in the automotive market, assisting them in making informed decisions about car pricing and predict the Price of an used Car by taking it's Company name, it's Model name, Year of Purchase, and other parameters.
 
 <img src="https://github.com/rajtilakls2510/car_price_predictor/blob/master/predict.png">
 
