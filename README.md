@@ -64,6 +64,6 @@ Download PyCharm
 
 Website Link: https://irrigreat.herokuapp.com/
 
-PEST DATASET: https://www.kaggle.com/simranvolunesia/pest-dataset
+CAR DATASET: https://github.com/BHARATHVAJSARAVANAN/BV-Car-Price-Predictor/blob/master/quikr_car.csv
 
 Project Demo: https://www.youtube.com/watch?v=HHyqrIkoIvo
