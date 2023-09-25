@@ -48,3 +48,18 @@ Link for notebook: https://github.com/rajtilakls2510/car_price_predictor/blob/ma
 
 4. This project was given the form of an website built on Flask where we used the Linear Regression model to perform predictions.
 
+## How to run on your local host?
+
+Prerequisite: Download all files from Github Link
+
+Download PyCharm
+
+Create new environment using command --> conda create -n env_name python==3.10.2
+Activate environment using command --> conda activate env_name
+Install requirements by typing (cd ProjectFolder) --> pip install -r requirements.txt
+Now run app.py by writing command --> python app.py
+Website Link: https://irrigreat.herokuapp.com/
+
+PEST DATASET: https://www.kaggle.com/simranvolunesia/pest-dataset
+
+Project Demo: https://www.youtube.com/watch?v=HHyqrIkoIvo
