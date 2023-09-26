@@ -50,7 +50,7 @@ Link for notebook: https://github.com/rajtilakls2510/car_price_predictor/blob/ma
 
 ## How to run on your local host?
 
-Prerequisite: Download all files from Github Link
+Prerequisite: Download all files from Github Link :https://github.com/BHARATHVAJSARAVANAN/BV-Garbage-Classification
 
 Download PyCharm
 
@@ -62,8 +62,18 @@ Download PyCharm
    
 4. Now run app.py by writing command --> python app.py
 
-Website Link: https://irrigreat.herokuapp.com/
+OR
 
-CAR DATASET: https://github.com/BHARATHVAJSARAVANAN/BV-Car-Price-Predictor/blob/master/quikr_car.csv
+Download VScode
 
-Project Demo: https://www.youtube.com/watch?v=HHyqrIkoIvo
+1. Download Project code from github 
+   
+2. Open Garbage Classification Folder in VScode.
+   
+3. Open Terminal and Install requirements by typing (cd ProjectFolder) --> pip install -r requirements.txt
+   
+4. Now run app.py by writing command --> python app.py
+
+CAR DATASET:https://github.com/BHARATHVAJSARAVANAN/BV-Car-Price-Predictor/blob/master/quikr_car.csv)
+
+Project Demo: linkedin
