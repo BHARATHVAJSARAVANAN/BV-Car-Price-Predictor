@@ -123,5 +123,3 @@ Download VScode
 4. Now run app.py by writing command --> python app.py
 
 CAR DATASET:https://github.com/BHARATHVAJSARAVANAN/BV-Car-Price-Predictor/blob/master/quikr_car.csv
-
-Project Demo: linkedin
