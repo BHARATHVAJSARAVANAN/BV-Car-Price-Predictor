@@ -32,6 +32,32 @@ This project aims to provide a useful tool for both buyers and sellers in the au
 11) Model Evaluation
 12) Conclusion
 
+## Built with
+* Python
+* Google Colab
+* HTML
+* CSS
+* JavaScript
+
+## Libraries
+
+* sklearn
+* sklearn.preprocessing
+* sklearn.compose
+* sklearn.pipeline
+* sklearn.metrics
+* keras
+* PIL
+* pathlib
+* scipy
+* os
+* numpy
+* matplotlib.pyplot
+* pandas
+* Flask
+* Flask-Cors
+* seaborn 
+    
 ## How to use?
 
 1. Clone the repository
