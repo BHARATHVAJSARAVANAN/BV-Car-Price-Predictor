@@ -65,17 +65,19 @@ This project aims to provide a useful tool for both buyers and sellers in the au
 * seaborn
  
 ## Featured Car
-![featured car](preview/featured car.png)
+
+![featured car](preview/featuredcar.png)
 
 ## Prediction Page
-![predict page](preview/predict page.png)
+
+![predict page](preview/predictpage.png)
 
 # Description
 
 ## What this project does?
 
 1. This project takes the parameters of an used car like: Company name, Model name, Year of Purchase, Fuel Type and Number of Kilometers it has been driven.
-2. It then predicts the possible price of the car. For example, the image below shows the predicted price of our Tata Re.
+2. It then predicts the possible price of the car. For example, the image below shows the predicted price of our Tata Tiago Revotorq.
    
 ## Result
 
