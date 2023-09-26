@@ -14,15 +14,11 @@ pytz==2020.1
 scikit-learn==0.22.2
 scipy==1.4.1
 six==1.15.0
-sklearn==0.0
+sklearn==1.3.2
 threadpoolctl==2.1.0
 Werkzeug==1.0.1
-seaborn
-sklearn.linear_model
-sklearn.preprocessing
-sklearn.compose
-sklearn.pipeline
-sklearn.metrics
+seaborn=0.12.2
+
 
 
 
