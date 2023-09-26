@@ -65,7 +65,7 @@ This project aims to provide a useful tool for both buyers and sellers in the au
 * seaborn
  
 ## Featured Car
-
+preview/featured car.png
 ![featured car](preview/featured car.png)
 
 ## Prediction Page
