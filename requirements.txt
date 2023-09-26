@@ -6,7 +6,6 @@ gunicorn==20.0.4
 itsdangerous==1.1.0
 Jinja2==2.11.2
 joblib==0.15.1
-MarkupSafe==1.1.1
 numpy==1.18.5
 pandas==1.0.4
 pickle-mixin==1.0.2
@@ -18,6 +17,12 @@ six==1.15.0
 sklearn==0.0
 threadpoolctl==2.1.0
 Werkzeug==1.0.1
+seaborn
+sklearn.linear_model
+sklearn.preprocessing
+sklearn.compose
+sklearn.pipeline
+sklearn.metrics
 
 
 
