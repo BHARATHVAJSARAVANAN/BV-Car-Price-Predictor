@@ -1,10 +1,12 @@
 # Car Price Predictor
 [![](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=darkgreen)](https://www.python.org)  [![](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=TensorFlow&logoColor=white)](https://www.tensorflow.org) [![](https://img.shields.io/badge/scikit_learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org/stable/) [![](https://img.shields.io/badge/SciPy-654FF0?style=for-the-badge&logo=SciPy&logoColor=white)](https://www.scipy.org) [![](https://img.shields.io/badge/Numpy-777BB4?style=for-the-badge&logo=numpy&logoColor=white)](https://numpy.org) [![](https://img.shields.io/badge/Pandas-2C2D72?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org)  [![](https://img.shields.io/badge/Plotly-239120?style=for-the-badge&logo=plotly&logoColor=white)](https://plotly.com) [![](https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=Keras&logoColor=white)](https://keras.io) [![](https://img.shields.io/badge/conda-342B029.svg?&style=for-the-badge&logo=anaconda&logoColor=white)](https://www.anaconda.com)
 
-Project link: https://car-price-price.herokuapp.com
-Demo Video: https://youtu.be/HEaFU68WAPM
+Project link: 
+Demo Video: linkedin
 
-<img src="https://github.com/rajtilakls2510/car_price_predictor/blob/master/demo.png">
+## Home Page
+
+![home](preview/home.png)
 
 # Project Overview
 To be able to predict used cars market value can help both buyers and sellers. There are lots of individuals who are interested in the used car market at some points in their life because they wanted to sell their car or buy a used car. In this process, it’s a big corner to pay too much or sell less then it’s market value.
@@ -15,7 +17,8 @@ In this Project, we are going to predict the Price of Used Cars using various fe
 
 This project aims to provide a useful tool for both buyers and sellers in the automotive market, assisting them in making informed decisions about car pricing and predict the Price of an used Car by taking it's Company name, it's Model name, Year of Purchase, and other parameters.
 
-<img src="https://github.com/rajtilakls2510/car_price_predictor/blob/master/predict.png">
+## About
+![about](preview/about.png)
 
 ## Following steps will be followed to reach our goal:
 
@@ -31,6 +34,9 @@ This project aims to provide a useful tool for both buyers and sellers in the au
 10) Making Predictions Using the Final Model
 11) Model Evaluation
 12) Conclusion
+
+## Brands
+![brands](preview/brands.png)
 
 ## Built with
 * Python
@@ -56,16 +62,24 @@ This project aims to provide a useful tool for both buyers and sellers in the au
 * pandas
 * Flask
 * Flask-Cors
-* seaborn 
+* seaborn
+ 
+## Featured Car
+![featured car](preview/featured car.png)
+
+## Prediction Page
+![predict page](preview/predict page.png)
 
 # Description
 
 ## What this project does?
 
 1. This project takes the parameters of an used car like: Company name, Model name, Year of Purchase, Fuel Type and Number of Kilometers it has been driven.
-2. It then predicts the possible price of the car. For example, the image below shows the predicted price of our Hyundai Grand i10. 
+2. It then predicts the possible price of the car. For example, the image below shows the predicted price of our Tata Re.
+   
+## Result
 
-<img src="https://github.com/rajtilakls2510/car_price_predictor/blob/master/predict.png">
+![prediction](preview/prediction.png)
 
 ## How this project does?
 
