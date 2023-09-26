@@ -92,7 +92,7 @@ Link for data: https://github.com/BHARATHVAJSARAVANAN/BV-Car-Price-Predictor/blo
 
 3. Then a Linear Regression model was built on top of it which had 0.92 R2_score.
 
-Link for notebook :https://github.com/BHARATHVAJSARAVANAN/BV-Car-Price-Predictor/blob/master/quikr_predictor.py
+   Link for notebook :https://github.com/BHARATHVAJSARAVANAN/BV-Car-Price-Predictor/blob/master/quikr_predictor.py
 
 4. This project was given the form of an website built on Flask where we used the Linear Regression model to perform predictions.
 
