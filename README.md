@@ -57,19 +57,6 @@ This project aims to provide a useful tool for both buyers and sellers in the au
 * Flask
 * Flask-Cors
 * seaborn 
-    
-## How to use?
-
-1. Clone the repository
-2. Install the required packages in "requirements.txt" file.
-
-Some packages are:
- - numpy 
- - pandas 
- - scikit-learn
-
-3. Run the "application.py" file
-And you are good to go. 
 
 # Description
 
