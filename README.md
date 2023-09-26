@@ -6,7 +6,7 @@ Demo Video: https://youtu.be/HEaFU68WAPM
 
 <img src="https://github.com/rajtilakls2510/car_price_predictor/blob/master/demo.png">
 
-## Project Overview
+# Project Overview
 To be able to predict used cars market value can help both buyers and sellers. There are lots of individuals who are interested in the used car market at some points in their life because they wanted to sell their car or buy a used car. In this process, it’s a big corner to pay too much or sell less then it’s market value.
 
 In this Project, we are going to predict the Price of Used Cars using various features like Present_Price, Selling_Price, Kms_Driven, Fuel_Type, Year etc. The data used in this project was downloaded from Kaggle.
@@ -16,6 +16,21 @@ In this Project, we are going to predict the Price of Used Cars using various fe
 This project aims to provide a useful tool for both buyers and sellers in the automotive market, assisting them in making informed decisions about car pricing and predict the Price of an used Car by taking it's Company name, it's Model name, Year of Purchase, and other parameters.
 
 <img src="https://github.com/rajtilakls2510/car_price_predictor/blob/master/predict.png">
+
+## Following steps will be followed to reach our goal:
+
+1) Importing libraries
+2) Reading the concerned dataset
+3) Data Understanding
+4) Data handling
+5) Data visualization
+6) Data preparation
+7) Splitting the Data and feature scaling
+8) Building a linear regression model
+9) Residual analysis of the train data
+10) Making Predictions Using the Final Model
+11) Model Evaluation
+12) Conclusion
 
 ## How to use?
 
