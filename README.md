@@ -68,7 +68,7 @@ Download VScode
 
 1. Download Project code from github 
    
-2. Open Garbage Classification Folder in VScode.
+2. Open Car Price Predictor Folder in VScode.
    
 3. Open Terminal and Install requirements by typing (cd ProjectFolder) --> pip install -r requirements.txt
    
