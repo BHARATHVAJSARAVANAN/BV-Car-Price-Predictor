@@ -50,7 +50,7 @@ Link for notebook: https://github.com/rajtilakls2510/car_price_predictor/blob/ma
 
 ## How to run on your local host?
 
-Prerequisite: Download all files from Github Link :https://github.com/BHARATHVAJSARAVANAN/BV-Garbage-Classification
+Prerequisite: Download all files from Github Link :https://github.com/BHARATHVAJSARAVANAN/BV-Car-Price-Predictor
 
 Download PyCharm
 
@@ -74,6 +74,6 @@ Download VScode
    
 4. Now run app.py by writing command --> python app.py
 
-CAR DATASET:https://github.com/BHARATHVAJSARAVANAN/BV-Car-Price-Predictor/blob/master/quikr_car.csv)
+CAR DATASET:https://github.com/BHARATHVAJSARAVANAN/BV-Car-Price-Predictor/blob/master/quikr_car.csv
 
 Project Demo: linkedin
