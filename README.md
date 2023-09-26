@@ -66,11 +66,11 @@ This project aims to provide a useful tool for both buyers and sellers in the au
  
 ## Featured Car
 
-![featured car](preview/featuredcar.png)
+![featured car](preview/featured car.png)
 
 ## Prediction Page
 
-![predict page](preview/predictpage.png)
+![predict page](preview/predict page.png)
 
 # Description
 
